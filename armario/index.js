@@ -1,11 +1,12 @@
 function mudarEstado() {
 
-    const btn = event.target;
+    const btn = event.target; // qual foi o botão.
     
-    const armario = btn.parentNode;
+    const armario = btn.parentNode; // qual foi o armário onde o botão foi apertado.
 
-    const tipo = armario.querySelector(".tipo1, .tipo2, .tipo3");
+    const tipo = armario.querySelector(".tipo1, .tipo2, .tipo3"); // qual é o estado daquele armário onde o botão foi apertado.
   
+    // troca o estado por outro.
     if (tipo.classList.contains("tipo1")) {
      
       tipo.classList.remove("tipo1");
